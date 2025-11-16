@@ -36,8 +36,8 @@ export default function Layout({ children }: LayoutProps) {
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">India Skills Initiative</h1>
-                <p className="text-xs text-gray-600">Workforce Transformation Dashboard</p>
+                <h1 className="text-xl font-bold text-gray-900">Team Rohini</h1>
+                <p className="text-xs text-gray-600">Delhi Technological University</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg">
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-lg font-bold">India Skills Initiative</h3>
+                <h3 className="text-lg font-bold">Team Rohini</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Data-driven insights for transforming India's workforce through strategic skilling interventions.
@@ -119,7 +119,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 India Skills Initiative. All rights reserved. Built for policy impact analysis.</p>
+            <p>&copy; Team Rohini. All rights reserved. Built for policy impact analysis.</p>
           </div>
         </div>
       </footer>
