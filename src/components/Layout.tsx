@@ -88,7 +88,8 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg">
+                <div className="dtu_logo">
+                  <img src="/DTU,_Delhi_official_logo.png" alt="logo"></img>
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-bold">Team Rohini</h3>
