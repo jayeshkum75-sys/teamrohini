@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Menu, X, TrendingUp } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 interface LayoutProps {
@@ -28,24 +28,31 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+
+      {/* HEADER */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center gap-3">
-              {/* changed */}
-              <img
-  src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
-  alt="DTU Logo"
-  className="w-10 h-10 object-contain"
-/>
 
-  
+            {/* LOGO + TITLE */}
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img
+                  src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
+                  alt="DTU Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Team Rohini</h1>
-                <p className="text-xs text-gray-600">Delhi Technological University</p>
+                <p className="text-xs text-gray-600">
+                  Delhi Technological University
+                </p>
               </div>
             </div>
 
+            {/* DESKTOP NAV */}
             <div className="hidden md:flex items-center gap-6">
               {navigation.map((item) => (
                 <button
@@ -58,6 +65,7 @@ export default function Layout({ children }: LayoutProps) {
               ))}
             </div>
 
+            {/* MOBILE MENU BUTTON */}
             <button
               className="md:hidden p-2"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -70,6 +78,7 @@ export default function Layout({ children }: LayoutProps) {
             </button>
           </div>
 
+          {/* MOBILE NAV */}
           {mobileMenuOpen && (
             <div className="md:hidden py-4 border-t border-gray-200">
               {navigation.map((item) => (
@@ -86,37 +95,56 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
       </header>
 
+      {/* MAIN CONTENT */}
       <main>{children}</main>
 
+      {/* FOOTER */}
       <footer className="bg-slate-900 text-white mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            {/* FOOTER LOGO SECTION */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                {/* changed */}
-               <img
-  src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
-  alt="DTU Logo"
-  className="w-10 h-10 object-contain"
-/>
-
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
+                    alt="DTU Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
 
                 <h3 className="text-lg font-bold">Team Rohini</h3>
               </div>
+
               <p className="text-gray-400 text-sm leading-relaxed">
                 Data-driven insights for transforming India's workforce through strategic skilling interventions.
               </p>
             </div>
 
+            {/* FOOTER LINKS */}
             <div>
               <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><button onClick={() => scrollToSection('/')} className="hover:text-white transition-colors">Skills Timeline</button></li>
-                <li><button onClick={() => scrollToSection('/gap-analysis')} className="hover:text-white transition-colors">Gap Analysis</button></li>
-                <li><button onClick={() => scrollToSection('/economic-impact')} className="hover:text-white transition-colors">Economic Impact</button></li>
+                <li>
+                  <button onClick={() => scrollToSection('/')} className="hover:text-white transition-colors">
+                    Skills Timeline
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => scrollToSection('/gap-analysis')} className="hover:text-white transition-colors">
+                    Gap Analysis
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => scrollToSection('/economic-impact')} className="hover:text-white transition-colors">
+                    Economic Impact
+                  </button>
+                </li>
               </ul>
             </div>
 
+            {/* FOOTER SOURCES */}
             <div>
               <h4 className="font-semibold mb-4">Data Sources</h4>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -129,10 +157,13 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; Team Rohini, DTU. All rights reserved. Built for policy impact analysis.</p>
+            <p>
+              &copy; Team Rohini, DTU. All rights reserved. Built for policy impact analysis.
+            </p>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
