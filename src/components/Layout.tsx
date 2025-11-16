@@ -34,10 +34,11 @@ export default function Layout({ children }: LayoutProps) {
             <div className="flex items-center gap-3">
               {/* changed */}
               <img
-  src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
+  src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
   alt="DTU Logo"
   className="w-10 h-10 object-contain"
 />
+
   
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Team Rohini</h1>
@@ -93,11 +94,12 @@ export default function Layout({ children }: LayoutProps) {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 {/* changed */}
-                <img
-  src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
+               <img
+  src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/0/0e/Delhi_Technological_University_seal.png/600px-Delhi_Technological_University_seal.png"
   alt="DTU Logo"
   className="w-10 h-10 object-contain"
 />
+
 
                 <h3 className="text-lg font-bold">Team Rohini</h3>
               </div>
