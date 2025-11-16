@@ -32,9 +32,8 @@ export default function Layout({ children }: LayoutProps) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
+              {/* changed */}
+              <img src="src/logo.png.svg" alt="Logo" className="w-10 h-10 object-contain" />   
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Team Rohini</h1>
                 <p className="text-xs text-gray-600">Delhi Technological University</p>
@@ -88,9 +87,8 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg">
-                  <TrendingUp className="w-5 h-5 text-white" />
-                </div>
+                {/* changed */}
+                <img src="src/logo.png.svg" alt="Logo" className="w-10 h-10 object-contain" />
                 <h3 className="text-lg font-bold">Team Rohini</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
