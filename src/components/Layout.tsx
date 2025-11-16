@@ -119,7 +119,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; Team Rohini. All rights reserved. Built for policy impact analysis.</p>
+            <p>&copy; Team Rohini, DTU. All rights reserved. Built for policy impact analysis.</p>
           </div>
         </div>
       </footer>
