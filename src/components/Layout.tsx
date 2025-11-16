@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img
-  src="/dtu-logo.png"
+  src="/https://we-recycle.org/wp-content/uploads/2014/03/dtu-logo.png"
   alt="DTU Logo"
   className="w-10 h-10 object-contain"
 />
@@ -109,7 +109,7 @@ export default function Layout({ children }: LayoutProps) {
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
-  src="/dtu-logo.png"
+  src="/https://we-recycle.org/wp-content/uploads/2014/03/dtu-logo.png"
   alt="DTU Logo"
   className="w-10 h-10 object-contain"
 />
